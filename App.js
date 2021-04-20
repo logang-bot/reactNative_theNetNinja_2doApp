@@ -16,14 +16,15 @@ export default function App() {
   if (fontsLoaded) {
     console.log(fontsLoaded);
     return <Navigator />;
-  } else return 0;
-  // else {
-  //   return (
-  //     <AppLoading
-  //       startAsync={getFonts}
-  //       onFinish={() => setFontsLoaded(true)}
-  //       onError={console.warn}
-  //     />
-  //   );
-  // }
+  }
+  // else return <Navigator />;
+  else {
+    return (
+      <AppLoading
+        startAsync={getFonts}
+        onFinish={() => setFontsLoaded(true)}
+        onError={console.warn}
+      />
+    );
+  }
 }
