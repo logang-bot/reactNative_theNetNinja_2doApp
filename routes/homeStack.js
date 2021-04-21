@@ -1,5 +1,4 @@
 import { createStackNavigator } from "react-navigation-stack";
-import { createAppContainer } from "react-navigation";
 import Home from "../screens/home";
 import About from "../screens/about";
 import ReviewDetails from "../screens/reviewDetails";
@@ -28,8 +27,8 @@ const screens = {
 const HomeStack = createStackNavigator(screens, {
   defaultNavigationOptions: {
     headerStyle: {
-      backgroundColor: "#eee",
-      height: 60,
+      // backgroundColor: "#eee",
+      // height: 80,
     },
     headerTintColor: "#444",
   },
